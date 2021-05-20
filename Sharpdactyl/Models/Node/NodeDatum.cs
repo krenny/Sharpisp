@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sharpdactyl.Models.Node
 {
-    public partial class NodeDatum
+    public class NodeDatum
     {
         [JsonProperty("object", Required = Required.Always)]
         public string Object { get; set; }
@@ -16,7 +16,7 @@ namespace Sharpdactyl.Models.Node
         public Attributes Attributes { get; set; }
     }
 
-    public partial class Attributes
+    public class Attributes
     {
         [JsonProperty("id", Required = Required.Always)]
         public long Id { get; set; }

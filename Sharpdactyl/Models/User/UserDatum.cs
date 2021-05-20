@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sharpdactyl.Models.User
 {
-    public partial class UserDatum
+    public class UserDatum
     {
         [JsonProperty("attributes", Required = Required.Always)]
         public Attributes Attributes

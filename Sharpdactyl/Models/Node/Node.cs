@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sharpdactyl.Models.Node
 {
-    public partial class Node
+    public class Node
     {
         [JsonProperty("object", Required = Required.Always)]
         public string Object { get; set; }
@@ -18,7 +18,7 @@ namespace Sharpdactyl.Models.Node
         [JsonProperty("meta", Required = Required.Always)]
         public Meta Meta { get; set; }
     }
-    public partial class Meta
+    public  class Meta
     {
         [JsonProperty("pagination", Required = Required.Always)]
         public Pagination Pagination {get;set;}

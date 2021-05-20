@@ -72,9 +72,13 @@ namespace Sharpdactyl
             var data = new NameValueCollection();
             data["signal"] = signal.ToString();
             if (Post("client/servers/" + ServerId + "/power", data) != "")
+            {
                 return false;
+            }
             else
+            {
                 return true;
+            }
         }
 
         public bool PostCMDCommand(string ServerId, string command)
@@ -82,9 +86,13 @@ namespace Sharpdactyl
             var data = new NameValueCollection();
             data["command"] = command;
             if (Post("client/servers/" + ServerId + "/command", data) != "")
+            {
                 return false;
+            }
             else
+            {
                 return true;
+            }
         }
         #endregion
 
@@ -227,15 +235,15 @@ namespace Sharpdactyl
             Post("application/servers/" + id + "/rebuild", null);
         }
 
-        public void Admin_DeleteServerById(string id, bool force = false)
+        public void Admin_DeleteServerById(string id, bool force)
         {
-            if (!force)
-                Delete("application/servers/" + id);
-            else
                 Delete("application/servers/" + id + "/force");
         }
-
-        #endregion
+        public void Admin_DeleteServerById(string id)
+        {
+            Delete("application/servers/" + id);
+        }
+        
 
         private void Delete(string query)
         {

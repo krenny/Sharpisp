@@ -2,7 +2,7 @@
 
 namespace Sharpdactyl.Models.User
 {
-    public partial class User
+    public class User
     {
         [JsonProperty("object", Required = Required.Always)]
 
