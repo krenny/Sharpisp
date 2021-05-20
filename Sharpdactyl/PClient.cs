@@ -116,10 +116,9 @@ namespace Sharpdactyl
             return JsonConvert.DeserializeObject<UserDatum>(Get("application/users/external/" + id), settings);
         }
 
-        public UserDatum Admin_CreateUser(string username, string email, string first, string last, string password)
+        public UserDatum Admin_CreateUser(string email, string first, string last, string password)
         {
             var data = new NameValueCollection();
-            data["username"] = username;
             data["email"] = email;
             data["first_name"] = first;
             data["last_name"] = last;
@@ -127,10 +126,9 @@ namespace Sharpdactyl
             return JsonConvert.DeserializeObject<UserDatum>(Post("application/users", data));
         }
 
-        public UserDatum Admin_EditUser(string userId, string username, string email, string first, string last, string password)
+        public UserDatum Admin_EditUser(string userId, string email, string first, string last, string password)
         {
             var data = new NameValueCollection();
-            data["username"] = username;
             data["email"] = email;
             data["first_name"] = first;
             data["last_name"] = last;
@@ -267,7 +265,7 @@ namespace Sharpdactyl
             var wb = new WebClient();
 
             wb.Headers.Add("Authorization", "Bearer " + ApiKey);
-            wb.Headers.Add("Accept", "Application/vnd.pterodactyl.v1+json");
+            wb.Headers.Add("Accept", "application/vnd.wisp.v1+json");
 
             var response = wb.UploadValues(HostName + "/api/" + query, "POST", data);
             string responseInString = Encoding.UTF8.GetString(response);
@@ -302,7 +300,7 @@ namespace Sharpdactyl
             request.AutomaticDecompression = DecompressionMethods.GZip;
             request.Headers["Authorization"] = "Bearer " + ApiKey;
             request.ContentType = "application/json";
-            request.Accept = "Application/vnd.pterodactyl.v1+json";
+            request.Accept = "application/vnd.wisp.v1+json";
             string json = "";
             using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
             using (Stream stream = response.GetResponseStream())

@@ -39,14 +39,6 @@ namespace Sharpdactyl.Models.User
             get;
             set;
         }
-
-        [JsonProperty("username", Required = Required.Always)]
-        public string Username
-        {
-            get;
-            set;
-        }
-
         [JsonProperty("email", Required = Required.Always)]
         public string Email
         {
