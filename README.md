@@ -10,7 +10,7 @@ NuGet [here](https://www.nuget.org/packages/Sharpisp/1.0.0)
 Dowload from releases [here](https://github.com/KadePcGames/Sharpdactyl/releases/latest)
 
 # Api Docs
-Please visit the api docs [here (Getting Started)](https://github.com/KadePcGames/Sharpdactyl/blob/master/API%20Docs/Getting%20started.md)
+Please visit the api docs [here (Getting Started)](https://github.com/krenny/Sharpisp/wiki)
 
 # Dependencies
 [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
