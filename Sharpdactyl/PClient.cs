@@ -7,7 +7,6 @@ using System.Collections.Specialized;
 using Sharpdactyl.Models.Client;
 using Sharpdactyl.Models.User;
 using Sharpdactyl.Models.Node;
-using System;
 
 namespace Sharpdactyl
 {
@@ -243,7 +242,7 @@ namespace Sharpdactyl
         {
             Delete("application/servers/" + id);
         }
-        
+        #endregion
 
         private void Delete(string query)
         {

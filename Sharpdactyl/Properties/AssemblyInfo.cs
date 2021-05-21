@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Sharpdactyl")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Sharpisp")]
+[assembly: AssemblyDescription("The C# API Wrapper for the WISP Game Panel")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("HP Inc.")]
+[assembly: AssemblyCompany("krenny")]
 [assembly: AssemblyProduct("Sharpdactyl")]
-[assembly: AssemblyCopyright("Copyright © HP Inc. 2019")]
+[assembly: AssemblyCopyright("Copyright © krenny 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
