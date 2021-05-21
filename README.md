@@ -12,8 +12,8 @@ Dowload from releases [here](https://github.com/KadePcGames/Sharpdactyl/releases
 # Api Docs
 Please visit the api docs [here (Getting Started)](https://github.com/KadePcGames/Sharpdactyl/blob/master/API%20Docs/Getting%20started.md)
 
-#Dependencies
+# Dependencies
 [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 
-#For Pterodactyl 0.x
+# For Pterodactyl 0.x
 original [Sharpdactyl](https://github.com/KadeDev/Sharpdactyl)
