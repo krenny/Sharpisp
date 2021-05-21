@@ -5,7 +5,7 @@
 
 # Installation
 ## NuGet:
-(Still down)
+NuGet [here](https://www.nuget.org/packages/Sharpisp/1.0.0)
 ## Other
 Dowload from releases [here](https://github.com/KadePcGames/Sharpdactyl/releases/latest)
 
